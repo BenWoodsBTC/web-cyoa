@@ -17,19 +17,22 @@ var start = function () {
 window.onload = start;  // Kicks off program
 
 function checkAnswers(answer) {  // Matches Scenes  - replace with yours
-    // if (answer == "Think some more") {
-    //    thinkSomeMore();
-    // } 
-    //  else if (answer == "spin in a circle") {
-    //    spinInCircle();
-    // }
+	if (answer == "Talk to the Dog") {
+		SphericalDogLife();
+	} 
+	else if (answer == "Pet the Dog") {
+		LoseYourHand();
+	}
+	else if (answer == "Push the Dog") {
+		YouFeelBad();
+	}
 }
 
 
-/* function town(){  // FIRST SCENE - WELCOMES PLAYER
- * var name = prompt("what is your name?");
- * story("One day you are on your way home from school and you hear a whisper coming from a dark forest you never remember seeing before\
- * \nCome here " + name + " Come here\
+function town(){  // FIRST SCENE - WELCOMES PLAYER
+var name = prompt("what is your name?");
+story("You see a toll booth apear from nowhere. On the window is a piece of paper\
+ * \nThat says \"Enter,  " + name + ".\"\
  * \nYou can't place the voice, but there is something familiar about it. What do you do?");
  * 
  * choices = ["Think some more", "go into the forest", "ignore it and go home"];
