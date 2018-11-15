@@ -10,7 +10,7 @@ var data = [];
 // story function variables
 var spin = 0;
 
-function checkAnswers(answer) {  // Matches Scenes  - replace with yours
+function checkAnswers(answer) {
 	if (answer == "Talk to the Dog") {
 		sphericalDogLife();
 	}
@@ -64,7 +64,7 @@ function youFeelBad() {
 
 function sphericalDogLife(){  // FIRST SCENE - WELCOMES PLAYER
 	story("The dog tells you about the Land of Spheres where all plants and animals are spherical. It informs you that spherical dogs are in danger and it needs your help to save them. What do you tell the dog?");
-	data = ["[undefined]|l1s5","[undefined]|l1s6","[undefined]|l1s7"]
+	data = ["Talk to the Dog|l1s2","Pet the Dog|l1s3","Push the Dog|l1s4"]
 	options = parseOptions(data);
 	targets = parseTargets(data);
 	answer = setOptions(options, targets);

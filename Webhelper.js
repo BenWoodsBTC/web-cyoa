@@ -2,7 +2,7 @@ window.onload = start;
 
 function start() {
 setup();
-town();
+sphericalDog();
 }
 
 var buttonElement = document.getElementById("button1");
@@ -43,7 +43,7 @@ function delayText(text, delay) {
 
 function setup() {
     // setOptions();
-    setOptions(["test 1", "test 2", "test3"]); 
+    setOptions(["test 1", "test 2", "test 3"]); 
     var buttonElement = document.getElementById("button1");
     buttonElement.innerHTML = "What will you do?"; 
     buttonElement.onclick = function () {
