@@ -39,7 +39,7 @@ function parseTargets(data){
 }
 
 function sphericalDog() {
-	story("As you travel along a dirt path on a mid-summer day, you see something in the corner of your eye. A spherical dog is rolling about in long, swaying grass. You walk up and confront the dog.\ \nWhat do you do?");
+	story("As you travel along a dirty path on a mid-summer day, you see something in the corner of your eye. A spherical dog is rolling about in long, swaying grass. You walk up and confront the dog.\ \nWhat do you do?");
 	data = ["Talk to the Dog|l1s2","Pet the Dog|l1s3","Push the Dog|l1s4"]
 	options = parseOptions(data);
 	targets = parseTargets(data);
